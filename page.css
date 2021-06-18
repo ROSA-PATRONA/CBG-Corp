@@ -27182,8 +27182,8 @@ li.active > a.u-button-style.u-button-style.u-border-active-palette-3-light-3 {
 }
 .u-button-style.u-border-palette-3-base:hover,
 .u-button-style.u-border-palette-3-base:focus {
-  border-color: #d95e0d !important;
-  color: #d95e0d !important;
+  border-color: #252c2e !important;
+  color: #252c2e !important;
   background-color: transparent !important;
 }
 .u-border-hover-palette-3-base:hover,
@@ -27203,7 +27203,7 @@ li.active > a.u-button-style.u-button-style.u-border-active-palette-3-base {
   border-color: #f1680e !important;
 }
 .u-link.u-border-palette-3-base[class*="u-border-"]:hover {
-  border-color: #d95e0d !important;
+  border-color: #252c2e !important;
 }
 .u-border-palette-4-dark-3,
 .u-separator-palette-4-dark-3:after {
