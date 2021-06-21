@@ -146,7 +146,7 @@
         (function () {
             /*!
              * https://github.com/gilmoreorless/css-background-parser
-             * Copyright © 2015 Gilmore Davidson under the MIT license: http://gilmoreorless.mit-license.org/
+             * Copyright © 2015 Gilmore Davidson under the MIT license: https://gilmoreorless.mit-license.org/
              */
             ! function (t) {
                 function e(t) {
@@ -1774,7 +1774,7 @@
         "use strict";
         var n, o;
         /*! PhotoSwipe - v4.1.3 - 2019-01-08
-         * http://photoswipe.com
+         * https://photoswipe.com
          * Copyright (c) 2019 Dmitry Semenov; */
         ! function (a, factory) {
             if (true) n = factory, o = "function" == typeof n ? n.call(e, i, e, t) : n, !(void 0 !== o && (t.exports = o));
@@ -1890,7 +1890,7 @@
                                 clearTimeout(id)
                             }
                         }
-                        return o.svg = !!document.createElementNS && !!document.createElementNS("http://www.w3.org/2000/svg", "svg").createSVGRect, i.features = o, o
+                        return o.svg = !!document.createElementNS && !!document.createElementNS("https://www.w3.org/2000/svg", "svg").createSVGRect, i.features = o, o
                     }
                 };
                 if (i.detectFeatures(), i.features.oldIE) i.bind = function (t, type, e, i) {
@@ -3153,7 +3153,7 @@
         "use strict";
         var n, o;
         /*! PhotoSwipe Default UI - 4.1.3 - 2019-01-08
-         * http://photoswipe.com
+         * https://photoswipe.com
          * Copyright (c) 2019 Dmitry Semenov; */
         ! function (a, factory) {
             if (true) n = factory, o = "function" == typeof n ? n.call(e, i, e, t) : n, !(void 0 !== o && (t.exports = o));
@@ -3200,7 +3200,7 @@
                         }, {
                             id: "pinterest",
                             label: "Pin it",
-                            url: "http://www.pinterest.com/pin/create/button/" + "?url={{url}}&media={{image_url}}&description={{text}}"
+                            url: "https://www.pinterest.com/pin/create/button/" + "?url={{url}}&media={{image_url}}&description={{text}}"
                         }, {
                             id: "download",
                             label: "Download image",
@@ -5180,7 +5180,7 @@
              * A simple, framework-agnostic scrollspy script.
              * (c) 2019 Chris Ferdinandi
              * MIT License
-             * http://github.com/cferdinandi/gumshoe
+             * https://github.com/cferdinandi/gumshoe
              */
             ! function (i, factory) {
                 if (true) n = [], o = function () {
