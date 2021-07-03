@@ -4,11 +4,29 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
-  <meta name="keywords" content="Logistica Maquinaria Aduanas">
+  <meta name="keywords" content="Logistica Maquinaria Aduanas Courier">
   <meta name="description"
     content="Somos una empresa peruana que nace con el objetivo de generar soluciones integrales en los sectores de maquinaria línea amarilla y operaciones logísticas digitales.">
   <meta name="page_type" content="np-template-header-footer-from-plugin">
-  <title>Inicio | CBG CORP. SAC</title>
+  <title>CBG CORP. SAC | Inicio</title>
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TKF6DT5');
+  </script>
+  <!-- End Google Tag Manager -->
   <link rel="stylesheet" href="page.css" media="screen">
   <link rel="stylesheet" href="Index.css" media="screen">
   <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
@@ -26,9 +44,9 @@
       "name": "CBG-CORP SAC",
       "logo": "images/b2_z.png",
       "sameAs": [
-        "facebook.com/#",
-        "youtube.com/#",
-        "linkedin.com/#",
+        "https://www.facebook.com/cbg-corp",
+        "https://www.youtube.com/cbg-corp",
+        "https://www.linkedin.com/cbg-corp",
         "mailto:contacto@cbg-corp.com?subject=Email%20desde%20pagina%20web",
         "tel:+51 996 660 217",
         "tel:+51 01 531 7510"
@@ -36,13 +54,65 @@
     }
   </script>
   <meta name="theme-color" content="#18166d">
-  <meta property="og:title" content="Inicio | CBG CORP. SAC">
+  <meta property="og:title" content="Index">
   <meta property="og:description"
     content="Somos una empresa peruana que nace con el objetivo de generar soluciones integrales en los sectores de maquinaria línea amarilla y operaciones logísticas digitales.">
   <meta property="og:type" content="website">
+  <script src="https://www.google.com/recaptcha/api.js?render=6LdKnnEbAAAAAHMywvPkEbijCQIWTp4WqOxeQvYT"></script>
+  <script>
+    (function (grecaptcha, sitekey, actions) {
+
+      var recaptcha = {
+
+        execute: function (action) {
+          grecaptcha.execute(
+            sitekey, {
+              action: action
+            }
+          ).then(function (token) {
+            var forms = document.getElementsByTagName('form');
+
+            for (var i = 0; i < forms.length; i++) {
+              var fields = forms[i].getElementsByTagName('input');
+
+              for (var j = 0; j < fields.length; j++) {
+                var field = fields[j];
+
+                if ('recaptchaResponse' === field.getAttribute('name')) {
+                  field.setAttribute('value', token);
+                  break;
+                }
+              }
+            }
+          });
+        },
+
+        executeContact: function () {
+          recaptcha.execute(actions['contact']);
+        }
+      };
+
+      grecaptcha.ready(
+        recaptcha.executeContact
+      );
+
+      document.addEventListener('change',
+        recaptcha.executeContact, false
+      );
+    })(
+      grecaptcha,
+      '6LdKnnEbAAAAAHMywvPkEbijCQIWTp4WqOxeQvYT', {
+        "contact": "contact"
+      }
+    );
+  </script>
 </head>
 
 <body data-home-page="index.html" data-home-page-title="Index" class="u-body">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKF6DT5" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <header class="u-clearfix u-grey-5 u-header u-sticky u-header" id="sec-c00b">
     <div class="u-clearfix u-sheet u-sheet-1">
       <a href="https://www.cbg-corp.com" class="u-image u-image-round u-logo u-image-1" data-image-width="733"
@@ -72,10 +142,33 @@
             <li class="u-nav-item"><a
                 class="u-border-2 u-border-active-custom-color-3 u-border-hover-white u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-3 u-text-custom-color-4 u-text-hover-grey-40"
                 href="index.html" style="padding: 10px;">Inicio</a>
+              <div class="u-nav-popup">
+                <ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-2">
+                  <li class="u-nav-item"><a class="u-button-style u-grey-5 u-nav-link" href="index.html#carousel_68d8"
+                      data-page-id="461106">Servicios</a>
+                  </li>
+                  <li class="u-nav-item"><a class="u-button-style u-grey-5 u-nav-link" href="index.html#carousel_07f2"
+                      data-page-id="461106">Contacto</a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="u-nav-item"><a
                 class="u-border-2 u-border-active-custom-color-3 u-border-hover-white u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-3 u-text-custom-color-4 u-text-hover-grey-40"
                 href="Nosotros.html" style="padding: 10px;">Nosotros</a>
+              <div class="u-nav-popup">
+                <ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-3">
+                  <li class="u-nav-item"><a class="u-button-style u-grey-5 u-nav-link"
+                      href="Nosotros.html#carousel_f5ad" data-page-id="462803">Equipo</a>
+                  </li>
+                  <li class="u-nav-item"><a class="u-button-style u-grey-5 u-nav-link" href="Nosotros.html#sec-9837"
+                      data-page-id="462803">Contacto</a>
+                  </li>
+                  <li class="u-nav-item"><a class="u-button-style u-grey-5 u-nav-link"
+                      href="Nosotros.html#carousel_e650" data-page-id="462803">Misión, Visión, Objetivos</a>
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
@@ -83,12 +176,35 @@
           <div class="u-container-style u-custom-color-3 u-inner-container-layout u-sidenav">
             <div class="u-sidenav-overflow">
               <div class="u-menu-close"></div>
-              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
-                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="index.html"
-                    style="padding: 10px 20px;">Inicio</a>
+              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-4">
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Index.html"
+                    style="padding: 10px;">Inicio</a>
+                  <div class="u-nav-popup">
+                    <ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-5">
+                      <li class="u-nav-item"><a class="u-button-style u-grey-5 u-nav-link"
+                          href="Index.html#carousel_68d8" data-page-id="461106">Servicios</a>
+                      </li>
+                      <li class="u-nav-item"><a class="u-button-style u-grey-5 u-nav-link"
+                          href="index.html#carousel_07f2" data-page-id="461106">Contacto</a>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
                 <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Nosotros.html"
-                    style="padding: 10px 20px;">Nosotros</a>
+                    style="padding: 10px;">Nosotros</a>
+                  <div class="u-nav-popup">
+                    <ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-6">
+                      <li class="u-nav-item"><a class="u-button-style u-grey-5 u-nav-link"
+                          href="Nosotros.html#carousel_f5ad" data-page-id="462803">Equipo</a>
+                      </li>
+                      <li class="u-nav-item"><a class="u-button-style u-grey-5 u-nav-link" href="Nosotros.html#sec-9837"
+                          data-page-id="462803">Contacto</a>
+                      </li>
+                      <li class="u-nav-item"><a class="u-button-style u-grey-5 u-nav-link"
+                          href="Nosotros.html#carousel_e650" data-page-id="462803">Misión, Visión, Objetivos</a>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -107,7 +223,8 @@
           <div class="u-size-30">
             <div class="u-layout-row">
               <div class="u-container-style u-image u-layout-cell u-size-60 lazyload u-image-1" data-image-width="1000"
-                data-image-height="1019" data-bg="url(&quot;images/ers-min.jpg&quot;)">
+                data-image-height="1019" data-animation-name="fadeIn" data-animation-duration="1000"
+                data-animation-delay="0" data-bg="url(&quot;images/ers-min.jpg&quot;)">
                 <div class="u-container-layout u-valign-bottom u-container-layout-1">
                   <p class="u-align-left u-text u-text-body-alt-color u-text-1">Imagen de referencia</p>
                 </div>
@@ -121,12 +238,11 @@
               </div>
               <div
                 class="u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xs u-container-style u-layout-cell u-size-30 u-layout-cell-3"
-                data-animation-name="bounceIn" data-animation-duration="1000" data-animation-delay="0"
+                data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="0"
                 data-animation-direction="">
                 <div class="u-container-layout u-container-layout-3">
-                  <h1 class="u-align-center-xl u-custom-font u-font-oswald u-text u-text-body-color u-text-2"
-                    data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="0"
-                    data-animation-direction="">Bienvenido a CBG&nbsp;</h1>
+                  <h1 class="u-align-center-xl u-custom-font u-font-oswald u-text u-text-body-color u-text-2">Bienvenido
+                    a CBG&nbsp;</h1>
                   <h3 class="u-align-center-xl u-custom-font u-font-oswald u-text u-text-body-color u-text-3">
                     CORPORACIÓN LOGÍSTICA</h3>
                   <p class="u-align-center-xl u-text u-text-4">Somos el Grupo CGB, empresa peruana enfocada en la
@@ -559,9 +675,11 @@
     class="u-align-center-lg u-align-center-md u-align-center-xl u-align-left-sm u-align-left-xs u-clearfix u-grey-5 u-section-5"
     id="carousel_ae33">
     <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-      <h1 class="u-text u-text-1">Operador Logístico</h1>
-      <p class="u-custom-font u-font-pt-sans u-text u-text-2">Brindando soluciones en la cadena logística desde la
-        generación del requerimiento hasta la puesta en planta de nuestros clientes.</p>
+      <h1 class="u-text u-text-1" data-animation-name="flipIn" data-animation-duration="1000" data-animation-delay="0"
+        data-animation-direction="X">Operador Logístico</h1>
+      <p class="u-custom-font u-font-pt-sans u-text u-text-2" data-animation-name="flipIn"
+        data-animation-duration="1000" data-animation-delay="0" data-animation-direction="X">Brindando soluciones en la
+        cadena logística desde la generación del requerimiento hasta la puesta en planta de nuestros clientes.</p>
       <div class="u-border-1 u-border-grey-dark-1 u-line u-line-horizontal u-line-1"></div>
       <div class="u-expanded-width u-gallery u-layout-grid u-lightbox u-show-text-on-hover u-gallery-1">
         <div class="u-gallery-inner u-gallery-inner-1">
@@ -797,7 +915,8 @@
             class="u-align-left u-container-style u-layout-cell u-left-cell u-size-24-xl u-size-26-lg u-size-31-md u-size-31-sm u-size-31-xs u-layout-cell-1">
             <div class="u-container-layout u-container-layout-1">
               <h1 class="u-custom-font u-font-oswald u-text u-text-body-alt-color u-text-1" data-animation-name="flipIn"
-                data-animation-duration="1000" data-animation-delay="0" data-animation-direction="X">Po​r qué​ escogernos a nosotr​os?</h1>
+                data-animation-duration="1000" data-animation-delay="0" data-animation-direction="X">Po​r qué​
+                escogernos a nosotr​os?</h1>
               <div class="u-border-7 u-border-custom-color-3 u-line u-line-horizontal u-line-1"
                 data-animation-name="flipIn" data-animation-duration="1000" data-animation-delay="0"
                 data-animation-direction="X"></div>
@@ -858,9 +977,10 @@
                   </div>Ética profesional.
                 </li>
               </ul>
-              <p class="u-text u-text-body-alt-color u-text-3">CBG ofrece trabajar con seguridad cuidando el personal,
-                su imagen y buena reputación basándose en el conocimiento y experiencia de sus
-                colaboradores.&nbsp;&nbsp;</p>
+              <p class="u-text u-text-body-alt-color u-text-3" data-animation-name="flipIn"
+                data-animation-duration="1000" data-animation-delay="0" data-animation-direction="X">CBG ofrece trabajar
+                con seguridad cuidando el personal, su imagen y buena reputación basándose en el conocimiento y
+                experiencia de sus colaboradores.&nbsp;&nbsp;</p>
               <a href="cbg-corp.com/Nosotros.html"
                 class="u-active-custom-color-4 u-btn u-btn-round u-button-style u-custom-color-3 u-hover-custom-color-2 u-radius-2 u-text-active-black u-text-hover-black u-btn-1">explora</a>
             </div>
@@ -885,8 +1005,10 @@
       <div class="u-container-layout u-valign-middle u-container-layout-1">
         <h1 class="u-text u-text-1" spellcheck="false">Contactanos</h1>
         <div class="u-expanded-width u-form u-form-1">
-          <form action="#" method="POST" class="u-clearfix u-form-spacing-27 u-form-vertical u-inner-form"
-            style="padding: 0px;" source="custom" name="form">
+          <form
+            action="https://cbg-corp.us6.list-manage.com/subscribe/post?u=bee69b4cc283aa241f9e131df&amp;id=60ec2ce136"
+            method="POST" class="u-clearfix u-form-spacing-27 u-form-vertical u-inner-form" style="padding: 0px;"
+            source="mailchimp" name="form">
             <div class="u-form-group u-form-name u-form-group-1">
               <label for="name-30a4" class="u-form-control-hidden u-label"></label>
               <input type="text" placeholder="Nombre" id="name-30a4" name="name"
@@ -916,6 +1038,7 @@
   </section>
 
 
+
   <footer class="u-align-center-md u-align-center-sm u-align-center-xs u-clearfix u-footer u-grey-5" id="sec-4f85">
     <div class="u-clearfix u-sheet u-sheet-1">
       <a href="https://cbg-corp.com" class="u-hidden-md u-hidden-sm u-hidden-xs u-image u-logo u-image-1"
@@ -926,7 +1049,7 @@
       <div class="u-align-left u-hidden-md u-hidden-sm u-hidden-xs u-social-icons u-spacing-10 u-social-icons-1"
         data-animation-name="flipIn" data-animation-duration="1000" data-animation-delay="0"
         data-animation-direction="X">
-        <a class="u-social-url" target="_blank" title="Facebook" href="https://www.facebook.com/#"><span
+        <a class="u-social-url" target="_blank" title="Facebook" href="facebook.com/#"><span
             class="u-icon u-icon-circle u-social-facebook u-social-icon u-text-custom-color-3 u-icon-1"><svg
               class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style="">
               <use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="#svg-e096"></use>
@@ -936,7 +1059,7 @@
             c0-6.7,3.1-17,17-17h12.5v13.9H73.5z"></path>
             </svg></span>
         </a>
-        <a class="u-social-url" target="_blank" title="YouTube" href="https://www.youtube.com/#"><span
+        <a class="u-social-url" target="_blank" title="YouTube" href="youtube.com/#"><span
             class="u-icon u-icon-circle u-social-icon u-social-youtube u-text-custom-color-3 u-icon-2"><svg
               class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style="">
               <use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="#svg-5997"></use>
@@ -947,7 +1070,7 @@
               </path>
             </svg></span>
         </a>
-        <a class="u-social-url" target="_blank" title="LinkedIn" href="https://www.linkedin.com/#"><span
+        <a class="u-social-url" target="_blank" title="LinkedIn" href="linkedin.com/#"><span
             class="u-icon u-icon-circle u-social-icon u-social-linkedin u-text-custom-color-3 u-icon-3"><svg
               class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style="">
               <use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="#svg-9309"></use>

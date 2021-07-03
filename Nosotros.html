@@ -9,6 +9,24 @@
     content="Somos una empresa peruana que nace con el objetivo de generar soluciones integrales en los sectores de maquinaria línea amarilla y operaciones logísticas digitales.">
   <meta name="page_type" content="np-template-header-footer-from-plugin">
   <title>Nosotros | CBG-CORP SAC</title>
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TKF6DT5');
+  </script>
+  <!-- End Google Tag Manager -->
   <link rel="stylesheet" href="page.css" media="screen">
   <link rel="stylesheet" href="Nosotros.css" media="screen">
   <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
@@ -21,7 +39,7 @@
 
   <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
+      "@context": "http://schema.org",
       "@type": "Organization",
       "name": "CBG-CORP SAC",
       "logo": "images/b2_z.png",
@@ -40,9 +58,61 @@
   <meta property="og:description"
     content="Somos una empresa peruana que nace con el objetivo de generar soluciones integrales en los sectores de maquinaria línea amarilla y operaciones logísticas digitales.">
   <meta property="og:type" content="website">
+  <script src="https://www.google.com/recaptcha/api.js?render=6LdKnnEbAAAAAHMywvPkEbijCQIWTp4WqOxeQvYT"></script>
+  <script>
+    (function (grecaptcha, sitekey, actions) {
+
+      var recaptcha = {
+
+        execute: function (action) {
+          grecaptcha.execute(
+            sitekey, {
+              action: action
+            }
+          ).then(function (token) {
+            var forms = document.getElementsByTagName('form');
+
+            for (var i = 0; i < forms.length; i++) {
+              var fields = forms[i].getElementsByTagName('input');
+
+              for (var j = 0; j < fields.length; j++) {
+                var field = fields[j];
+
+                if ('recaptchaResponse' === field.getAttribute('name')) {
+                  field.setAttribute('value', token);
+                  break;
+                }
+              }
+            }
+          });
+        },
+
+        executeContact: function () {
+          recaptcha.execute(actions['contact']);
+        }
+      };
+
+      grecaptcha.ready(
+        recaptcha.executeContact
+      );
+
+      document.addEventListener('change',
+        recaptcha.executeContact, false
+      );
+    })(
+      grecaptcha,
+      '6LdKnnEbAAAAAHMywvPkEbijCQIWTp4WqOxeQvYT', {
+        "contact": "contact"
+      }
+    );
+  </script>
 </head>
 
 <body class="u-body">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKF6DT5" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <header class="u-clearfix u-grey-5 u-header u-sticky u-header" id="sec-c00b">
     <div class="u-clearfix u-sheet u-sheet-1">
       <a href="https://www.cbg-corp.com" class="u-image u-image-round u-logo u-image-1" data-image-width="733"
@@ -54,9 +124,9 @@
           <a class="u-button-style u-custom-active-border-color u-custom-active-color u-custom-border u-custom-border-color u-custom-borders u-custom-color u-custom-hover-border-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-custom-color-3 u-text-hover-palette-2-base"
             href="#" style="background-image: none;">
             <svg>
-              <use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use>
             </svg>
-            <svg version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <defs>
                 <symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;">
                   <rect y="1" width="16" height="2"></rect>
@@ -72,10 +142,33 @@
             <li class="u-nav-item"><a
                 class="u-border-2 u-border-active-custom-color-3 u-border-hover-white u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-3 u-text-custom-color-4 u-text-hover-grey-40"
                 href="index.html" style="padding: 10px;">Inicio</a>
+              <div class="u-nav-popup">
+                <ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-2">
+                  <li class="u-nav-item"><a class="u-button-style u-grey-5 u-nav-link" href="index.html#carousel_68d8"
+                      data-page-id="461106">Servicios</a>
+                  </li>
+                  <li class="u-nav-item"><a class="u-button-style u-grey-5 u-nav-link" href="index.html#carousel_07f2"
+                      data-page-id="461106">Contacto</a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="u-nav-item"><a
                 class="u-border-2 u-border-active-custom-color-3 u-border-hover-white u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-custom-color-3 u-text-custom-color-4 u-text-hover-grey-40"
                 href="Nosotros.html" style="padding: 10px;">Nosotros</a>
+              <div class="u-nav-popup">
+                <ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-3">
+                  <li class="u-nav-item"><a class="u-button-style u-grey-5 u-nav-link"
+                      href="Nosotros.html#carousel_f5ad" data-page-id="462803">Equipo</a>
+                  </li>
+                  <li class="u-nav-item"><a class="u-button-style u-grey-5 u-nav-link" href="Nosotros.html#sec-9837"
+                      data-page-id="462803">Contacto</a>
+                  </li>
+                  <li class="u-nav-item"><a class="u-button-style u-grey-5 u-nav-link"
+                      href="Nosotros.html#carousel_e650" data-page-id="462803">Misión, Visión, Objetivos</a>
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
@@ -83,12 +176,35 @@
           <div class="u-container-style u-custom-color-3 u-inner-container-layout u-sidenav">
             <div class="u-sidenav-overflow">
               <div class="u-menu-close"></div>
-              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
+              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-4">
                 <li class="u-nav-item"><a class="u-button-style u-nav-link" href="index.html"
-                    style="padding: 10px 20px;">Inicio</a>
+                    style="padding: 10px;">Inicio</a>
+                  <div class="u-nav-popup">
+                    <ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-5">
+                      <li class="u-nav-item"><a class="u-button-style u-grey-5 u-nav-link"
+                          href="index.html#carousel_68d8" data-page-id="461106">Servicios</a>
+                      </li>
+                      <li class="u-nav-item"><a class="u-button-style u-grey-5 u-nav-link"
+                          href="index.html#carousel_07f2" data-page-id="461106">Contacto</a>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
                 <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Nosotros.html"
-                    style="padding: 10px 20px;">Nosotros</a>
+                    style="padding: 10px;">Nosotros</a>
+                  <div class="u-nav-popup">
+                    <ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-6">
+                      <li class="u-nav-item"><a class="u-button-style u-grey-5 u-nav-link"
+                          href="Nosotros.html#carousel_f5ad" data-page-id="462803">Equipo</a>
+                      </li>
+                      <li class="u-nav-item"><a class="u-button-style u-grey-5 u-nav-link" href="Nosotros.html#sec-9837"
+                          data-page-id="462803">Contacto</a>
+                      </li>
+                      <li class="u-nav-item"><a class="u-button-style u-grey-5 u-nav-link"
+                          href="Nosotros.html#carousel_e650" data-page-id="462803">Misión, Visión, Objetivos</a>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -102,9 +218,10 @@
     <div class="u-expanded-width u-grey-5 u-shape u-shape-rectangle u-shape-1"></div>
     <div class="u-custom-color-3 u-shape u-shape-circle u-shape-2"></div>
     <img class="u-image u-image-default lazyload u-image-1" data-image-width="1000" data-image-height="820"
+      data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="0"
       data-src="images/ygty-min.jpg">
-    <div class="u-align-left u-container-style u-group u-white u-group-1" data-animation-name="flipIn"
-      data-animation-duration="1000" data-animation-delay="0" data-animation-direction="X">
+    <div class="u-align-left u-container-style u-group u-white u-group-1" data-animation-name="fadeIn"
+      data-animation-duration="1000" data-animation-delay="0" data-animation-direction="">
       <div class="u-container-layout u-valign-top u-container-layout-1">
         <h3 class="u-text u-text-1">Empaquetado y transporte a costes muy competitivos</h3>
         <p class="u-text u-text-2">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
@@ -118,7 +235,8 @@
           equipo</a>
       </div>
     </div>
-    <h1 class="u-align-left u-text u-text-4">
+    <h1 class="u-align-left u-text u-text-4" data-animation-name="fadeIn" data-animation-duration="1000"
+      data-animation-delay="0">
       <span style="font-weight: 700;">Logística</span>,&nbsp;almacenamiento, acondicionamiento<br>
     </h1>
   </section>
@@ -137,7 +255,9 @@
             <div class="u-size-30">
               <div class="u-layout-row">
                 <div class="u-container-style u-image u-layout-cell u-right-cell u-size-60 lazyload u-image-1"
-                  data-image-width="1500" data-image-height="751" data-bg="url(&quot;images/sdee.jpg&quot;)">
+                  data-image-width="1500" data-image-height="751" data-animation-name="flipIn"
+                  data-animation-duration="1000" data-animation-delay="0" data-animation-direction="X"
+                  data-bg="url(&quot;images/sdee.jpg&quot;)">
                   <div class="u-container-layout"></div>
                 </div>
               </div>
@@ -157,7 +277,9 @@
                       nuestros empleados. </p>
                   </div>
                 </div>
-                <div class="u-container-style u-layout-cell u-left-cell u-size-29 u-layout-cell-3">
+                <div class="u-container-style u-layout-cell u-left-cell u-size-29 u-layout-cell-3"
+                  data-animation-name="flipIn" data-animation-duration="1000" data-animation-delay="0"
+                  data-animation-direction="X">
                   <div class="u-container-layout u-container-layout-3">
                     <h3 class="u-text u-text-7">Nuestros Objetivos</h3>
                     <p class="u-text u-text-8">Ser una empresa enfocada en la realidad de los clientes, adaptando el
@@ -253,7 +375,9 @@
         <div class="u-layout" style="">
           <div class="u-layout-row" style="">
             <div
-              class="u-align-left u-container-style u-layout-cell u-left-cell u-size-25-lg u-size-25-xl u-size-28-md u-size-28-sm u-size-28-xs u-layout-cell-1">
+              class="u-align-left u-container-style u-layout-cell u-left-cell u-size-25-lg u-size-25-xl u-size-28-md u-size-28-sm u-size-28-xs u-layout-cell-1"
+              data-animation-name="flipIn" data-animation-duration="1000" data-animation-delay="0"
+              data-animation-direction="X">
               <div class="u-container-layout u-valign-top u-container-layout-1">
                 <h1 class="u-text u-text-1">Aliados estrategicos</h1>
                 <h5 class="u-text u-text-2">Warehouse &amp; Distribución</h5>
@@ -261,7 +385,9 @@
               </div>
             </div>
             <div
-              class="u-container-style u-layout-cell u-right-cell u-size-32-md u-size-32-sm u-size-32-xs u-size-35-lg u-size-35-xl u-layout-cell-2">
+              class="u-container-style u-layout-cell u-right-cell u-size-32-md u-size-32-sm u-size-32-xs u-size-35-lg u-size-35-xl u-layout-cell-2"
+              data-animation-name="flipIn" data-animation-duration="1000" data-animation-delay="0"
+              data-animation-direction="X">
               <div class="u-container-layout u-valign-top u-container-layout-2">
                 <p class="u-text u-text-3">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                   aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
@@ -292,7 +418,9 @@
                 </div>
               </div>
             </div>
-            <div class="u-container-style u-layout-cell u-left-cell u-size-34 u-layout-cell-2">
+            <div class="u-container-style u-layout-cell u-left-cell u-size-34 u-layout-cell-2"
+              data-animation-name="flipIn" data-animation-duration="1000" data-animation-delay="0"
+              data-animation-direction="X">
               <div class="u-container-layout u-container-layout-2">
                 <div class="u-grey-5 u-shape u-shape-circle u-shape-1"></div>
                 <h2 class="u-text u-text-1">Nuestro Equipo</h2>
@@ -316,8 +444,10 @@
     <div class="u-clearfix u-sheet u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1">
       <div class="u-absolute-hcenter-sm u-custom-color-3 u-expanded-height u-shape u-shape-rectangle u-shape-1"></div>
       <img class="u-align-left u-image lazyload u-image-1" data-image-width="1200" data-image-height="857"
-        data-src="images/fgc.jpg">
-      <div class="u-align-left u-container-style u-group u-white u-group-1">
+        data-animation-name="flipIn" data-animation-duration="1000" data-animation-delay="0"
+        data-animation-direction="X" data-src="images/fgc.jpg">
+      <div class="u-align-left u-container-style u-group u-white u-group-1" data-animation-name="flipIn"
+        data-animation-duration="1000" data-animation-delay="0" data-animation-direction="X">
         <div class="u-container-layout u-valign-middle u-container-layout-1">
           <h2 class="u-text u-text-1" spellcheck="false">Contacta a uno de nuestros profesionales </h2>
           <p class="u-text u-text-2">Luctus venenatis lectus magna fringilla urna. Morbi tempus iaculis urna id. Mauris
@@ -343,12 +473,18 @@
             <div class="u-container-style u-layout-cell u-size-38 u-layout-cell-1">
               <div class="u-container-layout u-container-layout-1">
                 <img alt="" class="u-align-left u-image u-image-default lazyload u-image-1" data-image-width="1200"
-                  data-image-height="801" data-src="images/8e075c3d-6d19-3aa0-6b3f-c73b145fc018.jpg">
+                  data-image-height="801" data-animation-name="flipIn" data-animation-duration="1000"
+                  data-animation-delay="0" data-animation-direction="X"
+                  data-src="images/8e075c3d-6d19-3aa0-6b3f-c73b145fc018.jpg">
                 <img alt="" class="u-align-left u-image u-image-default lazyload u-image-2" data-image-width="626"
-                  data-image-height="352" data-src="images/man-warehouse-working-with-packages_23-2148886842.jpg">
+                  data-image-height="352" data-animation-name="flipIn" data-animation-duration="1000"
+                  data-animation-delay="0" data-animation-direction="X"
+                  data-src="images/man-warehouse-working-with-packages_23-2148886842.jpg">
               </div>
             </div>
-            <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-22 u-layout-cell-2">
+            <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-22 u-layout-cell-2"
+              data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="0"
+              data-animation-direction="">
               <div class="u-container-layout u-valign-top u-container-layout-2">
                 <h1 class="u-text u-text-1">Corporación Logística&nbsp;</h1>
                 <p class="u-text u-text-2">Contáctanos e infórmate sobre los beneficios para tu negocio y conoce algunos
@@ -386,7 +522,7 @@
                   <a class="u-social-url" target="_blank" href="facebook.com/#" title="Facebook"><span
                       class="u-icon u-icon-circle u-social-facebook u-social-icon u-text-custom-color-3 u-icon-1">
                       <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style="">
-                        <use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="#svg-50ee"></use>
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-50ee"></use>
                       </svg>
                       <svg class="u-svg-content" viewBox="0 0 112 112" x="0px" y="0px" id="svg-50ee">
                         <path
@@ -398,7 +534,7 @@
                   <a class="u-social-url" target="_blank" href="twitter.com/#" title="Twitter"><span
                       class="u-icon u-icon-circle u-social-icon u-social-twitter u-text-custom-color-3 u-icon-2">
                       <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style="">
-                        <use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="#svg-d346"></use>
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-d346"></use>
                       </svg>
                       <svg class="u-svg-content" viewBox="0 0 112 112" x="0px" y="0px" id="svg-d346">
                         <path
@@ -410,7 +546,7 @@
                   <a class="u-social-url" target="_blank" href="linkedin.com/#" title="LinkeIn"><span
                       class="u-icon u-icon-circle u-social-icon u-social-instagram u-text-custom-color-3 u-icon-3"><svg
                         class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style="">
-                        <use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="#svg-d6c0"></use>
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-d6c0"></use>
                       </svg><svg class="u-svg-content" viewBox="0 0 512 512" id="svg-d6c0">
                         <path
                           d="m475.074219 0h-438.148438c-20.394531 0-36.925781 16.53125-36.925781 36.925781v438.148438c0 20.394531 16.53125 36.925781 36.925781 36.925781h438.148438c20.394531 0 36.925781-16.53125 36.925781-36.925781v-438.148438c0-20.394531-16.53125-36.925781-36.925781-36.925781zm-293.464844 387h-62.347656v-187.574219h62.347656zm-31.171875-213.1875h-.40625c-20.921875 0-34.453125-14.402344-34.453125-32.402344 0-18.40625 13.945313-32.410156 35.273437-32.410156 21.328126 0 34.453126 14.003906 34.859376 32.410156 0 18-13.53125 32.402344-35.273438 32.402344zm255.984375 213.1875h-62.339844v-100.347656c0-25.21875-9.027343-42.417969-31.585937-42.417969-17.222656 0-27.480469 11.601563-31.988282 22.800781-1.648437 4.007813-2.050781 9.609375-2.050781 15.214844v104.75h-62.34375s.816407-169.976562 0-187.574219h62.34375v26.558594c8.285157-12.78125 23.109375-30.960937 56.1875-30.960937 41.019531 0 71.777344 26.808593 71.777344 84.421874zm0 0">
@@ -426,8 +562,10 @@
             <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-2">
               <div class="u-container-layout u-valign-middle u-container-layout-2">
                 <div class="u-expanded-width u-form u-form-1">
-                  <form action="#" method="POST" class="u-clearfix u-form-spacing-24 u-form-vertical u-inner-form"
-                    style="padding: 24px;" source="custom" name="form">
+                  <form
+                    action="https://cbg-corp.us6.list-manage.com/subscribe/post?u=bee69b4cc283aa241f9e131df&amp;id=60ec2ce136"
+                    method="POST" class="u-clearfix u-form-spacing-24 u-form-vertical u-inner-form"
+                    style="padding: 24px;" source="mailchimp" name="form">
                     <div class="u-form-group u-form-name">
                       <label for="name-3b9a" class="u-form-control-hidden u-label" wfd-invisible="true">Name</label>
                       <input type="text" placeholder="Ingresa tu nombre" id="name-3b9a" name="name"
@@ -444,8 +582,7 @@
                       <label for="message-3b9a" class="u-form-control-hidden u-label"
                         wfd-invisible="true">Message</label>
                       <textarea placeholder="Escribe tu mensaje" rows="4" cols="50" id="message-3b9a" name="message"
-                        class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-input-3"
-                        required=""></textarea>
+                        class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-input-3"></textarea>
                     </div>
                     <div class="u-align-left u-form-group u-form-submit">
                       <a href="#"
@@ -469,6 +606,7 @@
   </section>
 
 
+
   <footer class="u-align-center-md u-align-center-sm u-align-center-xs u-clearfix u-footer u-grey-5" id="sec-4f85">
     <div class="u-clearfix u-sheet u-sheet-1">
       <a href="https://cbg-corp.com" class="u-hidden-md u-hidden-sm u-hidden-xs u-image u-logo u-image-1"
@@ -482,7 +620,7 @@
         <a class="u-social-url" target="_blank" title="Facebook" href="facebook.com/#"><span
             class="u-icon u-icon-circle u-social-facebook u-social-icon u-text-custom-color-3 u-icon-1"><svg
               class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style="">
-              <use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="#svg-e096"></use>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-e096"></use>
             </svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-e096">
               <circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle>
               <path fill="#FFFFFF" d="M73.5,31.6h-9.1c-1.4,0-3.6,0.8-3.6,3.9v8.5h12.6L72,58.3H60.8v40.8H43.9V58.3h-8V43.9h8v-9.2
@@ -492,7 +630,7 @@
         <a class="u-social-url" target="_blank" title="YouTube" href="youtube.com/#"><span
             class="u-icon u-icon-circle u-social-icon u-social-youtube u-text-custom-color-3 u-icon-2"><svg
               class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style="">
-              <use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="#svg-5997"></use>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-5997"></use>
             </svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-5997">
               <circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle>
               <path fill="#FFFFFF"
@@ -503,7 +641,7 @@
         <a class="u-social-url" target="_blank" title="LinkedIn" href="linkedin.com/#"><span
             class="u-icon u-icon-circle u-social-icon u-social-linkedin u-text-custom-color-3 u-icon-3"><svg
               class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style="">
-              <use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="#svg-9309"></use>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-9309"></use>
             </svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-9309">
               <circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle>
               <path fill="#FFFFFF" d="M41.3,83.7H27.9V43.4h13.4V83.7z M34.6,37.9L34.6,37.9c-4.6,0-7.5-3.1-7.5-7c0-4,3-7,7.6-7s7.4,3,7.5,7
@@ -515,7 +653,7 @@
           href="mailto:contacto@cbg-corp.com?subject=Email%20desde%20pagina%20web"><span
             class="u-icon u-icon-circle u-social-email u-social-icon u-text-custom-color-3 u-icon-4"><svg
               class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style="">
-              <use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="#svg-310f"></use>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-310f"></use>
             </svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-310f">
               <circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle>
               <path id="path3864" fill="#FFFFFF" d="M27.2,28h57.6c4,0,7.2,3.2,7.2,7.2l0,0v42.7c0,3.9-3.2,7.2-7.2,7.2l0,0H27.2
@@ -526,7 +664,7 @@
         <a class="u-social-url" target="_blank" title="Whatsapp" href="tel:+51 996 660 217"><span
             class="u-icon u-icon-circle u-social-icon u-social-whatsapp u-text-custom-color-3 u-icon-5"><svg
               class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style="">
-              <use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="#svg-e450"></use>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-e450"></use>
             </svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-e450">
               <circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle>
               <path fill="#FFFFFF" d="M83.8,28.3C77.2,21.7,68.4,18,59,18c-19.3,0-35.1,15.7-35.1,35.1c0,6.2,1.6,12.2,4.7,17.5l-5,18.2L42.2,84
@@ -543,7 +681,7 @@
         <a class="u-social-url" target="_blank" title="Phone" href="tel:+51 01 531 7510"><span
             class="u-icon u-icon-circle u-social-icon u-social-phone u-text-custom-color-3 u-icon-6"><svg
               class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style="">
-              <use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="#svg-2137"></use>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-2137"></use>
             </svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-2137">
               <circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle>
               <path fill="#FFFFFF" d="M82.7,66c-3.9,0-7.7-0.6-11.3-1.8c-1.8-0.6-4,0-5,1.1l-7.1,5.4c-8.3-4.4-13.4-9.5-17.7-17.7l5.2-7
@@ -562,10 +700,10 @@
     class="u-back-to-top u-border-2 u-border-grey-5 u-custom-color-3 u-icon u-icon-circle u-opacity u-opacity-85 u-spacing-15 u-text-white"
     data-href="#" data-darkreader-inline-bgimage="">
     <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 551.13 551.13">
-      <use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="#svg-1d98"></use>
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1d98"></use>
     </svg>
     <svg class="u-svg-content" enable-background="new 0 0 551.13 551.13" viewBox="0 0 551.13 551.13"
-      xmlns="https://www.w3.org/2000/svg" id="svg-1d98" data-color="rgb(17, 17, 17)">
+      xmlns="http://www.w3.org/2000/svg" id="svg-1d98" data-color="rgb(17, 17, 17)">
       <path d="m275.565 189.451 223.897 223.897h51.668l-275.565-275.565-275.565 275.565h51.668z"></path>
     </svg>
   </span>

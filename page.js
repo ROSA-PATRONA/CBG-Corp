@@ -157,6 +157,10 @@
         var e = void 0,
             t = void 0;
         (function () {
+            /*!
+             * https://github.com/gilmoreorless/css-background-parser
+             * Copyright © 2015 Gilmore Davidson under the MIT license: http://gilmoreorless.mit-license.org/
+             */
             ! function (t) {
                 function e(t) {
                     if (!(this instanceof e)) return new e;
@@ -1782,6 +1786,9 @@
     5448: function (t, e, i) {
         "use strict";
         var n, o;
+        /*! PhotoSwipe - v4.1.3 - 2019-01-08
+         * http://photoswipe.com
+         * Copyright (c) 2019 Dmitry Semenov; */
         ! function (a, factory) {
             if (true) n = factory, o = "function" == typeof n ? n.call(e, i, e, t) : n, !(void 0 !== o && (t.exports = o));
             else if ("object" == typeof e) t.exports = factory();
@@ -3158,6 +3165,9 @@
     5449: function (t, e, i) {
         "use strict";
         var n, o;
+        /*! PhotoSwipe Default UI - 4.1.3 - 2019-01-08
+         * http://photoswipe.com
+         * Copyright (c) 2019 Dmitry Semenov; */
         ! function (a, factory) {
             if (true) n = factory, o = "function" == typeof n ? n.call(e, i, e, t) : n, !(void 0 !== o && (t.exports = o));
             else if ("object" == typeof e) t.exports = factory();
@@ -3565,6 +3575,13 @@
         var e = void 0,
             t = void 0;
         (function () {
+            /*!
+             * skrollr core
+             *
+             * Alexander Prinzhorn - https://github.com/Prinzhorn/skrollr
+             *
+             * Free to use under terms of MIT license
+             */
             ! function (e, i, n) {
                 "use strict";
 
@@ -4229,6 +4246,12 @@
         var e = void 0,
             t = void 0;
         (function () {
+            /*!
+            Waypoints - 4.0.1
+            Copyright © 2011-2016 Caleb Troughton
+            Licensed under the MIT license.
+            https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
+            */
             ! function () {
                 "use strict";
 
@@ -5165,6 +5188,13 @@
         "use strict";
         (function (i) {
             var n, o;
+            /*!
+             * gumshoejs v5.1.2
+             * A simple, framework-agnostic scrollspy script.
+             * (c) 2019 Chris Ferdinandi
+             * MIT License
+             * http://github.com/cferdinandi/gumshoe
+             */
             ! function (i, factory) {
                 if (true) n = [], o = function () {
                     return factory(i)
