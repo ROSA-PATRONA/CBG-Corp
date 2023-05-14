@@ -9,24 +9,15 @@
     content="Somos una empresa peruana que nace con el objetivo de generar soluciones integrales en los sectores de maquinaria línea amarilla y operaciones logísticas digitales.">
   <meta name="page_type" content="np-template-header-footer-from-plugin">
   <title>404</title>
-  <!-- Google Tag Manager -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-71RC2TVFDR"></script>
   <script>
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({
-        'gtm.start': new Date().getTime(),
-        event: 'gtm.js'
-      });
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != 'dataLayer' ? '&l=' + l : '';
-      j.async = true;
-      j.src =
-        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-TKF6DT5');
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-71RC2TVFDR');
   </script>
-  <!-- End Google Tag Manager -->
   <link rel="stylesheet" href="page.css" media="screen">
   <link rel="stylesheet" href="404.css" media="screen">
   <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
@@ -67,8 +58,8 @@
         execute: function (action) {
           grecaptcha.execute(
             sitekey, {
-              action: action
-            }
+            action: action
+          }
           ).then(function (token) {
             var forms = document.getElementsByTagName('form');
 
@@ -102,11 +93,12 @@
     })(
       grecaptcha,
       '6LdKnnEbAAAAAHMywvPkEbijCQIWTp4WqOxeQvYT', {
-        "contact": "contact"
-      }
+      "contact": "contact"
+    }
     );
   </script>
-  <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/bee69b4cc283aa241f9e131df/3c184b1fa482f96a921ec50d5.js");</script>
+  <script
+    id="mcjs">!function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/bee69b4cc283aa241f9e131df/3c184b1fa482f96a921ec50d5.js");</script>
 </head>
 
 <body class="u-body">
